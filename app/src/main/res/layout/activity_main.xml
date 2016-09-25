@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<FrameLayout
+    android:id="@+id/previewFrame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#90B0E0EF"
+        android:rowCount="1"
+        android:columnCount="5">
+        <ImageButton
+            android:onClick="search"
+            android:id="@+id/searchBtn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:background="@null"
+            android:clickable="true"
+            android:src="@drawable/searchbtn"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+           />
+        <ImageButton
+            android:onClick="flash"
+            android:clickable="true"
+            android:id="@+id/flash"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:background="@null"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/flashout"
+            android:layout_marginRight="15dp"
+    />
+
+        <ImageButton
+            android:id="@+id/button_timer"
+            android:onClick="onPopupButtonClick"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:background="@null"
+            android:src="@drawable/timer"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="5dp"
+          />
+        <ImageButton
+            android:id="@+id/fcam"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:background="@null"
+            android:src="@drawable/filter"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+    />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:background="@null"
+            android:src="@drawable/mypage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"/>
+    </GridLayout>
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#90B0E0EF"
+    android:rowCount="1"
+    android:columnCount="3"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true">
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:background="@null"
+        android:src="@drawable/trans"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+    <ImageButton
+        android:id="@+id/saveBtn"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:background="@null"
+        android:src="@drawable/capture"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="15dp"
+        android:onClick="capture"/>
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:background="@null"
+        android:onClick="gallery"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/gallay"
+        />
+</GridLayout>
+</RelativeLayout>

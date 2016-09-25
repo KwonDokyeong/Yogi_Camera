@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B0E0EF"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="검색하고 싶은 위치가 어디인가요?"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:id="@+id/textView"
+        android:textSize="21dp"
+        android:textColor="#020202"
+        android:layout_above="@+id/button_sch"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:background="@null"
+        android:src="@drawable/searchbtn"
+        android:id="@+id/button_sch"
+        android:onClick="onClick_sch"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_centerVertical="true"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_location"
+        android:layout_toLeftOf="@+id/button_sch"
+        android:layout_alignTop="@+id/button_sch"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:text="경복궁"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:clickable="true" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageButton_logo"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:background="@null"
+        android:clickable="true"
+        android:src="@drawable/logo"
+        android:onClick="onClick_logo" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignLeft="@+id/imageButton_logo"
+        android:layout_alignStart="@+id/imageButton_logo"
+        android:layout_below="@+id/imageButton_logo" />
+
+</RelativeLayout>
